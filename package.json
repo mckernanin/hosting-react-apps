@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
+  "name": "mckernanin-hosting-react-apps",
   "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "description": "Talk by Kevin McKernan for React Denver",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -9,7 +9,8 @@
     "lint": "eslint --ext .js,.jsx .",
     "deploy": "npm run clean & npm run build && surge -p .",
     "export": "spectacle-renderer --delay 3000",
-    "start": "cross-env NODE_ENV=development node server.js"
+    "start": "PORT=80 cross-env NODE_ENV=development node server.js",
+    "format": "prettier --write 'presentation/**/*.{js, jsx}'"
   },
   "author": "",
   "license": "MIT",
@@ -49,6 +50,7 @@
     "is-buffer": "^1.1.5",
     "markdown-loader": "^2.0.1",
     "node-libs-browser": "^2.0.0",
+    "prettier": "^1.14.2",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.1.1",
     "react-transform-catch-errors": "^1.0.2",

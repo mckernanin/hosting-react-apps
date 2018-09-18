@@ -100,6 +100,41 @@ export default class Presentation extends React.Component {
           4 directories, 10 files
           `}
           />
+          <br />
+          <Text textColor="whitish">
+            If this looks familiar, that's because it's{" "}
+            <em>just HTML, CSS, and JS.</em>
+          </Text>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={1} fit lineHeight={1} textColor="whitish">
+            What do I need to host a React app?
+          </Heading>
+          <Text textColor="whitish">Any web server! <br />(no, seriously.)</Text>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={1} fit lineHeight={1} textColor="whitish">
+            What are some hosting options?
+          </Heading>
+          <List textColor="whitish">
+            <ListItem><a href="https://m.do.co/c/5cbe77612248">DigitalOcean</a></ListItem>
+            <ListItem><a href="https://now.sh">Now.sh</a></ListItem>
+            <ListItem><a href="https://netlify.com">Netlify</a></ListItem>
+            <ListItem><a href="https://pages.github.com">Github Pages</a></ListItem>
+            <ListItem>...any other web server!</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Heading size={1} fit lineHeight={1} textColor="whitish">
+            How do I deploy my react app?
+          </Heading>
+          <List textColor="whitish">
+            <ListItem>Good ol' FTP/SFTP</ListItem>
+            <ListItem>Now.sh</ListItem>
+            <ListItem>Netlify</ListItem>
+            <ListItem>CI/CD (jenkins, travis, circle, drone, etc)</ListItem>
+            <ListItem><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps">git bare repo</a></ListItem>
+          </List>
         </Slide>
       </Deck>
     );
